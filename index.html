@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="student_info"> 
+            <h1 class="info">student information</h1>
+        <div class="input_area">
+            <input type="text" id="student_name" placeholder="enter name">
+            <p class="name_err"></p>
+            <input type="text" id="number" placeholder="enter mobile number">
+            <p class="mobile_no_err"></p>
+            <input type="text" id="email" placeholder="enter your email"/>
+            <p class="email_err"></p>
+            <div class="program_box">
+                <select id="program">
+                    <option value="">Program Name</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="Web Design">Web Design</option>
+                    <option value="Web development">Web development</option>
+                    <option value="Mern Stack development">Mern Stack development</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Motion Graphic">Motion Graphic</option>
+                </select>
+                <p class="program_err"></p>
+            </div>
+            <div class="b_group">
+                <select id="selection">
+                    <option value="">blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O-">O-</option>
+                </select>
+                <p class="blood_err"></p>
+            </div>
+            <label for="starting">starting date:</label>
+            <input type="date" id="starting" class="start_date">
+            <p class="date_err"></p>
+            <input type="file" id="file" accept="image/png, image.jpg, image/jpeg">
+            <p class="img_err"></p>
+            <div class="btn_box">
+                <button id="create_btn">create id</button>
+            </div>
+            </div>
+    </div>
+
+        <!-- student card design here --> 
+        
+        
+        <div id="student_id">
+        <h1 class="student_card_heading"></h1>
+        <div class="empty"></div>
+        <div class="wrapper">
+            <div class="img_area">
+                <img src="" alt="" id="image">
+            </div>
+            <div class="content_area">
+                <h2 class="id_heading">creative IT institute</h2>
+                <h3 class="card_name">student id card</h3>
+                <h3 class="name"></h3>
+                <div class="program_area">
+                    <h2 class="program">program:</h2>
+                    <p class="program_name"></p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_part">
+            <div class="id_area">
+                <h3 class="id">id no</h3>
+                <span id="id_number"></span>
+            </div>
+            <div class="mobile_no_area">
+                <h3 class="m_number">mobile no</h3>
+                <span id="mobile_no"></span>
+            </div>
+            <div class="date_area">
+                <h3 class="starting_date">starting date</h3>
+                <span id="date_time"></span>
+            </div>
+            <div class="blood_area">
+                <h3 class="blood_grp">blood group</h3>
+                <span id="blood_name"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

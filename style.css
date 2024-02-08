@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#student_info{
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background:linear-gradient(#ffffff,#c0cdce);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+.info{
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #000000;
+}
+.input_area{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input_area input{
+    width: 200px;
+    padding: 6px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    outline: none;
+}
+.input_area input::placeholder{
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.program_box select{
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    cursor: pointer;
+}
+.b_group select{
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    cursor: pointer;
+}
+.input_area #file{
+    border: none;
+}
+.input_area label{
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: underline;
+}
+#create_btn{
+    background: #30bae8;
+	padding: 8px 18px;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	border-radius: 6px;
+	box-shadow: 0px 3px 0px #2eb0e0;
+	border: 1px solid transparent;
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#create_btn:hover{
+	background: #2eb0e0;
+	box-shadow: 0px 3px 0px #219cc6;
+}
+.name_err, .mobile_no_err, .email_err, .id_err, .program_err, .blood_err, .date_err, .img_err{
+    color: red;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+        
+        /* student id card design here */
+
+.student_card_heading{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: red;
+}
+
+#student_id{
+    width: 500px;
+    background-color: rgb(71, 218, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: none;
+}
+.empty{
+    width: 100%;
+    height: 110px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.wrapper{
+    display: flex;
+    column-gap: 50px;
+    margin: 20px;
+    position: relative;
+    z-index: 10;
+}
+.img_area{
+    width: 130px;
+    height: 150px;
+    margin-top: 10px;
+}
+.img_area img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+.id_heading{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card_name{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.name{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: red;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.program_area{
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+}
+.program_area .program{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.program_area .program_name{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.bottom_part{
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.bottom_part h3{
+    font-size: 10px;
+    text-transform: uppercase;
+}
