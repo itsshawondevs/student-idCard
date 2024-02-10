@@ -91,7 +91,13 @@ createBtn.addEventListener('click', function(){
         imgErr.innerHTML = ''
         imgFile = image.src = URL.createObjectURL(imgFile.files[0])
         studentInfo.style.display = 'none'
-        studentId.style.display = 'block'
+        cardHeading.style.display = 'block'
+        
+        setTimeout(() =>{
+            studentId.style.display = 'block'
+            cardHeading.style.display = 'none'
+        },2000)
+
         random()
     }
 })

@@ -103,7 +103,12 @@
 .student_card_heading{
     text-transform: capitalize;
     font-size: 30px;
-    color: red;
+    color: red;    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
 }
 
 #student_id{
@@ -112,7 +117,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     display: none;
 }
 .empty{
@@ -140,7 +145,7 @@
     width: inherit;
     height: inherit;
     object-fit: cover;
-    border: 5px solid #fff;
+    border: 5px solid rgb(71, 218, 255);
 }
 .id_heading{
     font-size: 30px;
@@ -183,4 +188,11 @@
 .bottom_part h3{
     font-size: 10px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+    #student_id{
+        transform: rotate(90deg);
+        top: 15%;
+    }
 }
