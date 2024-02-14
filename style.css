@@ -3,16 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 #student_info{
     width: 300px;
     border-radius: 10px;
     overflow: hidden;
     padding-bottom: 20px;
     background:linear-gradient(#ffffff,#c0cdce);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     display: block;
 }
 .info{
@@ -29,7 +32,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 8px;
 }
 .input_area input{
     width: 200px;
@@ -114,10 +117,7 @@
 #student_id{
     width: 500px;
     background-color: rgb(71, 218, 255);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     display: none;
 }
 .empty{
@@ -193,6 +193,6 @@
 @media screen and (max-width: 600px){
     #student_id{
         transform: rotate(90deg);
-        position: relative;
+        margin-top: 200px;
     }
 }
